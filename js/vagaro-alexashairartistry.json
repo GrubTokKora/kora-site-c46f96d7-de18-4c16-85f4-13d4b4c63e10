@@ -1,0 +1,43 @@
+{
+  "_dataSource": "Snapshot of fields extracted from the listing’s embedded Model JSON; prose is duplicated in alexas-hair-artistry.html. Original listing image URLs could not be downloaded (CDN 404).",
+  "businessName": "Alexa's Hair Artistry",
+  "description": "Welcome to Alexa's Hair Artistry, a salon studio in Hartsdale where luxury meets intention. I specialize in color transformations, lived-in color, dimensional blondes, non-toxic smoothing treatments and effortless styles- all designed with your lifestyle and hair health in mind. Step into a salon experience where every detail is chosen for confidence, beauty, and results without compromise.",
+  "address": {
+    "street": "110 South Central Avenue",
+    "city": "Hartsdale",
+    "state": "NY",
+    "zip": "10530",
+    "lat": 41.01561,
+    "lng": -73.80151
+  },
+  "phone": "9147195642",
+  "website": "https://www.alexahairartistry.com/home",
+  "owner": {
+    "firstName": "Alexa",
+    "lastName": "T"
+  },
+  "ratings": {
+    "overall": 4.8,
+    "punctuality": 5.0,
+    "service": 5.0,
+    "value": 5.0
+  },
+  "facility": {
+    "Business Type": "Hair, Hair Extensions",
+    "Walk-ins": "Yes",
+    "Payment Methods Accepted": "Visa and MasterCard, Discover, American Express, Debit card, Cash",
+    "Parking": "Free parking",
+    "Amenities": "WiFi",
+    "Spoken Languages": "English, Spanish",
+    "Cancellation policy": "At Alexa's Hair Artistry, we strive to provide an exceptional standard of care. In order to achieve this, we kindly request your cooperation in adhering to our cancellation policy. We understand that unexpected circumstances may arise; however, we kindly ask that you provide at least a 24 hour notice if you need to cancel or reschedule your appt. Cancellations made with less than 24 hrs are subject to a fee of 50% of the scheduled service. |^~^|nWe appreciate your understanding & cooperation in helping us maintain our schedule and serve all our clients efficiently.|~|",
+    "Kid Friendly": "Yes"
+  },
+  "featuredService": {
+    "styleTitle": "Alexa's Art",
+    "styleDesc": "At Alexa's Hair Artistry, we craft custom looks that enhance your natural beauty while prioritizing hair health.",
+    "serviceTitle": "Specialty Color Session",
+    "price": 215.0,
+    "currency": "$"
+  },
+  "reviewsNote": "Aggregate ratings only; individual review text was not present in the extracted static Model payload."
+}

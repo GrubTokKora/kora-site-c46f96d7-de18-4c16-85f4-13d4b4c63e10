@@ -1,354 +1,202 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon by JC – Premier Hair Salon in Hartsdale, NY</title>
-    <meta name="description" content="Experience luxury hair care at Salon by JC in Hartsdale, NY. We offer expert haircuts, coloring, and styling services. Book your appointment today for a transformative salon experience.">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Salon by JC – Premier Hair Salon in Hartsdale, NY">
-    <meta property="og:description" content="Experience luxury hair care at Salon by JC in Hartsdale, NY. We offer expert haircuts, coloring, and styling services.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1599387737838-66a356a15c76?q=80&w=2070&auto=format&fit=crop">
-    
-    <!-- Canonical -->
-    <link rel="canonical" href="https://example.com/index.html">
-    
-    <!-- Hero image preload -->
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1599387737838-66a356a15c76?q=80&w=2070&auto=format&fit=crop">
-    
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HairSalon",
-      "name": "Salon by JC",
-      "description": "A premier hair salon in Hartsdale, NY, offering expert haircuts, coloring, and styling services in a luxurious and relaxing atmosphere.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "110 South Central Avenue",
-        "addressLocality": "Hartsdale",
-        "addressRegion": "NY",
-        "postalCode": "10530",
-        "addressCountry": "US"
-      },
-      "telephone": "+1-914-555-0184",
-      "openingHours": [
-        "Tu-Fr 10:00-19:00",
-        "Sa 09:00-17:00"
-      ],
-      "image": "https://images.unsplash.com/photo-1599387737838-66a356a15c76?q=80&w=2070&auto=format&fit=crop"
-    }
-    </script>
-    
-    <!-- Tailwind + Fonts -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                        'serif': ['Playfair Display', 'serif'],
-                    },
-                    colors: {
-                        'brand-primary': '#1a1a1a',
-                        'brand-secondary': '#f0f0f0',
-                        'brand-accent': '#c5a572',
-                        'brand-accent-hover': '#b3925f',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .hero-gradient {
-            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0) 100%);
-        }
-    </style>
-</head>
-<body class="bg-brand-primary text-brand-secondary font-sans antialiased">
-
-    <script>
-        window.KORA_SITE_CONFIG = {
-            apiBaseUrl: "https://api.kora.ai",
-            businessId: "c46f96d7-de18-4c16-85f4-13d4b4c63e10",
-            recaptchaSiteKey: "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" // Google's public test key
-        };
-    </script>
-
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-primary/80 backdrop-blur-sm transition-all duration-300" id="header">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-serif font-bold text-brand-accent">Salon by JC</a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-brand-accent transition-colors">About</a>
-                <a href="#services" class="hover:text-brand-accent transition-colors">Services</a>
-                <a href="#gallery" class="hover:text-brand-accent transition-colors">Gallery</a>
-                <a href="#contact" class="hover:text-brand-accent transition-colors">Contact</a>
-            </nav>
-            <a href="tel:+19145550184" class="hidden md:inline-block bg-brand-accent text-brand-primary px-6 py-2 rounded-full font-semibold hover:bg-brand-accent-hover transition-colors">Book Now</a>
-            <button id="mobile-menu-button" class="md:hidden text-white">
-                <i data-lucide="menu"></i>
-            </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-brand-primary">
-            <a href="#about" class="block text-center py-3 px-6 hover:bg-brand-accent hover:text-brand-primary">About</a>
-            <a href="#services" class="block text-center py-3 px-6 hover:bg-brand-accent hover:text-brand-primary">Services</a>
-            <a href="#gallery" class="block text-center py-3 px-6 hover:bg-brand-accent hover:text-brand-primary">Gallery</a>
-            <a href="#contact" class="block text-center py-3 px-6 hover:bg-brand-accent hover:text-brand-primary">Contact</a>
-            <a href="tel:+19145550184" class="block text-center py-4 px-6 bg-brand-accent text-brand-primary font-semibold">Book Now</a>
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Salons by JC New York: Hartsdale — 110 S Central Ave. Concierge-supported salon suites and beauty & wellness services from independent professionals."
+    />
+    <title>Salons by JC New York: Hartsdale | Salon Location</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+    <div class="topbar original-topbar">
+      <p>New York: Hartsdale</p>
+      <p>110 S Central Ave, Hartsdale, NY 10530</p>
+      <p><a href="tel:9143061199">914-306-1199</a></p>
+    </div>
+    <header class="site-header">
+      <a class="brand brand-logo" href="index.html">
+        <img src="assets/images/logo.png" alt="Salons by JC logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="directory.html">Directory</a>
+        <a href="alexas-hair-artistry.html">Alexa's Hair Artistry</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="directory.html">Find a Salon Professional</a>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="relative h-screen flex items-center justify-center text-center text-white">
-            <div class="absolute inset-0 bg-black">
-                <img src="https://images.unsplash.com/photo-1599387737838-66a356a15c76?q=80&w=2070&auto=format&fit=crop" 
-                     alt="A stylish modern salon interior" 
-                     class="w-full h-full object-cover opacity-50"
-                     loading="eager" fetchpriority="high" decoding="async" width="2070" height="1380">
-            </div>
-            <div class="absolute inset-0 hero-gradient"></div>
-            <div class="relative z-10 px-4">
-                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4 leading-tight">Experience a New You</h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Luxury Hair Care & Styling in Hartsdale</p>
-                <a href="tel:+19145550184" class="bg-brand-accent text-brand-primary px-10 py-4 rounded-full font-semibold text-lg hover:bg-brand-accent-hover transition-transform transform hover:scale-105">
-                    Book an Appointment
-                </a>
-            </div>
-        </section>
+      <section class="hero reveal" id="location">
+        <div class="hero-copy">
+          <p class="eyebrow">New York: Hartsdale</p>
+          <h1>Experience Extraordinary™</h1>
+          <p>
+            110 S Central Ave | Hartsdale, New York 10530 — Contact:
+            <a href="tel:9143061199">914-306-1199</a>
+          </p>
+          <p>
+            Salons by JC is committed to providing the premiere salon experience for
+            salon professionals to take control of their careers through salon
+            ownership with excellent locations, client care, business support,
+            education, community, and empowerment to enhance their lifestyles.
+          </p>
+          <p>
+            Whether you have been in business for a short time, many years, or have
+            a rock star following, our Salon Owners choose Salons by JC for many
+            reasons. Our full-time Concierge Manager provides care for your clients,
+            gives business guidance, and ensures the location is pristine. Our
+            customizable salon suites are move-in ready, and each location is
+            equipped with all the amenities needed to take your salon business to the
+            next level.
+          </p>
+          <p>
+            Clients can rest assured knowing they’re receiving the best care and
+            experience with Salons by JC salon professionals.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="directory.html">Find a Salon Professional</a>
+            <a class="btn btn-secondary" href="services.html">Our Salon Services</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="assets/images/hero.jpg" alt="Salons by JC Hartsdale location" />
+        </div>
+      </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-20 md:py-32 bg-black">
-            <div class="container mx-auto px-6 text-center max-w-3xl">
-                <h2 class="text-4xl md:text-5xl font-serif text-brand-accent mb-6">Our Philosophy</h2>
-                <p class="text-lg text-brand-secondary/80 leading-relaxed">
-                    At Salon by JC, we believe that beauty is an art form. Our mission is to provide a personalized and luxurious experience for every client. We combine modern techniques with classic style, using only the finest products to create stunning, healthy hair that reflects your unique personality. Step into our sanctuary and let us pamper you.
-                </p>
-            </div>
-        </section>
+      <section class="vagaro-feature reveal glass-card">
+        <div class="vagaro-feature-copy">
+          <p class="eyebrow">Featured at this location</p>
+          <h2>Alexa's Hair Artistry</h2>
+          <p>
+            Welcome to Alexa's Hair Artistry, a salon studio in Hartsdale where luxury
+            meets intention. Color transformations, lived-in color, dimensional blondes,
+            non-toxic smoothing treatments and effortless styles—all designed with your
+            lifestyle and hair health in mind.
+          </p>
+          <p class="muted">110 South Central Avenue, Hartsdale, NY 10530 · (914) 719-5642</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="alexas-hair-artistry.html">Full profile</a>
+            <a class="btn btn-secondary" href="tel:9147195642">Call Alexa</a>
+            <a class="btn btn-secondary" href="https://www.alexahairartistry.com/home"
+              target="_blank" rel="noreferrer">Website</a>
+          </div>
+        </div>
+        <div class="vagaro-feature-photo">
+          <img
+            src="assets/vagaro/alexa-salon-studio-1.png"
+            alt="Alexa's Hair Artistry salon studio"
+            loading="lazy"
+          />
+        </div>
+      </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-serif text-center text-brand-accent mb-12">Our Services</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-black p-8 rounded-lg border border-white/10 text-center">
-                        <h3 class="text-2xl font-serif text-brand-accent mb-3">Cut & Style</h3>
-                        <p class="text-brand-secondary/70 mb-4">Precision cuts and expert styling for a look that's uniquely you.</p>
-                        <span class="text-xl font-semibold text-white">$85+</span>
-                    </div>
-                    <div class="bg-black p-8 rounded-lg border border-white/10 text-center">
-                        <h3 class="text-2xl font-serif text-brand-accent mb-3">Full Color</h3>
-                        <p class="text-brand-secondary/70 mb-4">Rich, vibrant, all-over color that enhances your natural beauty.</p>
-                        <span class="text-xl font-semibold text-white">$150+</span>
-                    </div>
-                    <div class="bg-black p-8 rounded-lg border border-white/10 text-center">
-                        <h3 class="text-2xl font-serif text-brand-accent mb-3">Balayage</h3>
-                        <p class="text-brand-secondary/70 mb-4">Hand-painted highlights for a natural, sun-kissed dimension.</p>
-                        <span class="text-xl font-semibold text-white">$250+</span>
-                    </div>
-                    <div class="bg-black p-8 rounded-lg border border-white/10 text-center">
-                        <h3 class="text-2xl font-serif text-brand-accent mb-3">Keratin Treatment</h3>
-                        <p class="text-brand-secondary/70 mb-4">Smooth, frizz-free hair with our nourishing keratin formula.</p>
-                        <span class="text-xl font-semibold text-white">$300+</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="gallery reveal">
+        <h2>Gallery</h2>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
 
-        <!-- Gallery Section -->
-        <section id="gallery" class="py-20 md:py-32 bg-black">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-serif text-center text-brand-accent mb-12">Our Work</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <div class="overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" alt="Beautiful blonde balayage hairstyle" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" width="800" height="1000"></div>
-                    <div class="overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1605980576889-7a9c5a3b3d64?q=80&w=800&auto=format&fit=crop" alt="Woman with a short, stylish brunette bob haircut" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" width="800" height="1200"></div>
-                    <div class="overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1580615645362-a6bde9025c7b?q=80&w=800&auto=format&fit=crop" alt="Elegant updo hairstyle for a special occasion" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" width="800" height="1200"></div>
-                    <div class="overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1620912189836-1a66a3a35a6e?q=80&w=800&auto=format&fit=crop" alt="Vibrant red hair color" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" width="800" height="1000"></div>
-                    <div class="overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1607005962522-2951a727slc4?q=80&w=800&auto=format&fit=crop" alt="Long, wavy hair with subtle highlights" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" width="800" height="1200"></div>
-                    <div class="overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1616099091534-eb4a3155a1b4?q=80&w=800&auto=format&fit=crop" alt="A man getting a stylish haircut" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" width="800" height="1200"></div>
-                </div>
-            </div>
-        </section>
+      <section class="card-grid reveal">
+        <article class="glass-card">
+          <h2>The Concierge Experience</h2>
+          <h3>Caring for Extraordinary Clients & Supporting Salon Owners</h3>
+          <p>
+            As part of the Salons by JC extraordinary experience, we’re the only
+            salon suites that offer a full-time Concierge Manager at each location.
+          </p>
+          <p>
+            The Concierge Manager helps clients with anything they need while
+            visiting SBJC for salon services. They welcome clients, answer all
+            inquiries, and direct them to their Salon Owner to ensure every client
+            has a great experience.
+          </p>
+          <p>
+            Our Concierge Managers serve Salon Owners with everyday business support
+            and property management, allowing them to concentrate on providing the
+            best salon services. They also help create a community atmosphere —
+            making each location distinctive.
+          </p>
+        </article>
+        <article class="glass-card">
+          <h2>Our Salon Services</h2>
+          <h3>An Extraordinary Salon Service Experience</h3>
+          <p>
+            Clients pick Salons by JC over other salon suites because of the premium
+            services offered and the excellent care they receive. We strive to
+            provide a diverse selection of beauty and wellness services that clients
+            can choose from.
+          </p>
+          <p>
+            Salons by JC supports and accommodates this care by providing private,
+            spaciously designed suites with luxurious amenities for our Salon Owners.
+            Together we deliver an outstanding experience for the client — each and
+            every time. Whatever salon service clients are looking for, our Salon
+            Owners are here to provide them with an extraordinary experience.
+          </p>
+          <p class="muted">
+            Specific services vary per location, but here are some examples of common
+            services offered:
+          </p>
+        </article>
+      </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-5xl font-serif text-center text-brand-accent mb-12">Get in Touch</h2>
-                <div class="flex flex-col lg:flex-row gap-12">
-                    <div class="lg:w-1/2">
-                        <h3 class="text-2xl font-serif text-brand-accent mb-4">Contact Details</h3>
-                        <div class="space-y-4 text-lg text-brand-secondary/80">
-                            <p class="flex items-center"><i data-lucide="map-pin" class="w-5 h-5 mr-3 text-brand-accent"></i>110 South Central Avenue, Hartsdale, NY 10530</p>
-                            <p class="flex items-center"><i data-lucide="phone" class="w-5 h-5 mr-3 text-brand-accent"></i><a href="tel:+19145550184" class="hover:text-brand-accent">+1 (914) 555-0184</a></p>
-                            <p class="flex items-center"><i data-lucide="mail" class="w-5 h-5 mr-3 text-brand-accent"></i><a href="mailto:appointments@salonbyjc.com" class="hover:text-brand-accent">appointments@salonbyjc.com</a></p>
-                        </div>
-                        <h3 class="text-2xl font-serif text-brand-accent mt-8 mb-4">Hours</h3>
-                        <div class="text-lg text-brand-secondary/80">
-                            <p><strong>Tuesday - Friday:</strong> 10am - 7pm</p>
-                            <p><strong>Saturday:</strong> 9am - 5pm</p>
-                            <p><strong>Sunday - Monday:</strong> Closed</p>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/2 bg-black p-8 rounded-lg border border-white/10">
-                        <h3 class="text-2xl font-serif text-brand-accent mb-6">Send Us a Message</h3>
-                        <form id="contact-form" novalidate>
-                            <div class="mb-4">
-                                <label for="name" class="block mb-2 text-brand-secondary/80">Full Name</label>
-                                <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-brand-primary border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-accent" required>
-                            </div>
-                            <div class="mb-4">
-                                <label for="email" class="block mb-2 text-brand-secondary/80">Email Address</label>
-                                <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-brand-primary border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-accent" required>
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block mb-2 text-brand-secondary/80">Message</label>
-                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 bg-brand-primary border border-white/20 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-accent" required></textarea>
-                            </div>
-                            <div class="mb-6">
-                                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-theme="dark"></div>
-                            </div>
-                            <div>
-                                <button type="submit" class="w-full bg-brand-accent text-brand-primary px-8 py-3 rounded-full font-semibold hover:bg-brand-accent-hover transition-colors">Send Message</button>
-                            </div>
-                            <p id="form-message" class="mt-4 text-center"></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="services-list reveal">
+        <h2>Common services at this location</h2>
+        <ul class="chips">
+          <li>Haircuts</li>
+          <li>Nails</li>
+          <li>Barber</li>
+          <li>Waxing</li>
+          <li>Hair Color</li>
+          <li>Tattoo</li>
+          <li>Esthetician</li>
+          <li>Wellness</li>
+          <li>Extensions</li>
+          <li>Eyelashes</li>
+          <li>Massage</li>
+          <li>Natural Hair Care</li>
+        </ul>
+      </section>
+
+      <section class="location reveal">
+        <h2>Visit New York: Hartsdale</h2>
+        <p>
+          110 S Central Ave, Hartsdale, New York 10530<br />
+          Phone: <a href="tel:9143061199">914-306-1199</a>
+        </p>
+        <p class="muted">
+          Each SalonsbyJC franchise location operates independently and is owned by
+          its respective proprietor. Every salon professional and salon business
+          within a SalonsbyJC establishment is also independently owned and operated.
+          Services, pricing, and availability vary by provider.
+        </p>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-black py-8">
-        <div class="container mx-auto px-6 text-center text-brand-secondary/60">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" class="hover:text-brand-accent"><i data-lucide="instagram"></i></a>
-                <a href="#" class="hover:text-brand-accent"><i data-lucide="facebook"></i></a>
-                <a href="#" class="hover:text-brand-accent"><i data-lucide="twitter"></i></a>
-            </div>
-            <p>&copy; 2024 Salon by JC. All Rights Reserved.</p>
-        </div>
+    <footer class="site-footer">
+      <p>
+        Content reflects the public Hartsdale location page:
+        <a
+          href="https://salonsbyjc.com/location/new-york-hartsdale/"
+          target="_blank"
+          rel="noreferrer"
+          >salonsbyjc.com</a
+        >
+      </p>
     </footer>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-        lucide.createIcons();
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu on link click
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('py-2');
-                header.classList.remove('py-4');
-            } else {
-                header.classList.add('py-4');
-                header.classList.remove('py-2');
-            }
-        });
-
-        // Contact Form Submission
-        const contactForm = document.getElementById('contact-form');
-        const formMessage = document.getElementById('form-message');
-
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            const captchaToken = grecaptcha.getResponse();
-
-            formMessage.textContent = '';
-            formMessage.className = 'mt-4 text-center';
-
-            if (!name) {
-                formMessage.textContent = 'Please enter your full name.';
-                formMessage.classList.add('text-red-400');
-                return;
-            }
-            if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
-                formMessage.textContent = 'Please enter a valid email address.';
-                formMessage.classList.add('text-red-400');
-                return;
-            }
-            if (!message) {
-                formMessage.textContent = 'Please enter a message.';
-                formMessage.classList.add('text-red-400');
-                return;
-            }
-            if (!captchaToken) {
-                formMessage.textContent = 'Please complete the CAPTCHA.';
-                formMessage.classList.add('text-red-400');
-                return;
-            }
-
-            const cfg = window.KORA_SITE_CONFIG || {};
-            const apiBaseUrl = (cfg.apiBaseUrl || '').replace(/\/+$/, '');
-            const businessId = cfg.businessId;
-
-            if (!apiBaseUrl || !businessId) {
-                formMessage.textContent = 'Form submission is currently unavailable.';
-                formMessage.classList.add('text-red-400');
-                return;
-            }
-
-            formMessage.textContent = 'Sending...';
-            formMessage.classList.add('text-blue-400');
-
-            fetch(apiBaseUrl + '/api/v1/public/forms/submit', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    business_id: businessId,
-                    form_type: 'contact',
-                    form_data: { name, email, message },
-                    submitter_email: email,
-                    captcha_token: captchaToken
-                })
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                formMessage.textContent = 'Thank you! Your message has been sent.';
-                formMessage.className = 'mt-4 text-center text-green-400';
-                contactForm.reset();
-                grecaptcha.reset();
-            })
-            .catch(error => {
-                formMessage.textContent = 'An error occurred. Please try again later.';
-                formMessage.className = 'mt-4 text-center text-red-400';
-            });
-        });
-    </script>
-</body>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
