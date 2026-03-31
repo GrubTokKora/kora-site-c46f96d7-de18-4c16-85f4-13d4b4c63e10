@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
+    <meta name="author" content="Alexa's Hair Artistry" />
+    <meta
+      name="keywords"
+      content="Alexa's Hair Artistry, Hartsdale hair salon, luxury hair color, blonding, smoothing treatments, hair extensions, restorative hair care, Westchester salon"
+    />
     <meta
       name="description"
       content="Alexa's Hair Artistry in Hartsdale, NY. Luxury color, blonding, smoothing treatments, extensions, and restorative hair care."
     />
     <title>Alexa's Hair Artistry | Hartsdale NY</title>
 
-    <link rel="canonical" href="index.html" />
+    <link rel="canonical" href="https://www.alexahairartistry.com/" />
     <link
       rel="icon"
       type="image/png"
@@ -29,14 +34,20 @@
       content="Luxury hair color, blonding, smoothing treatments, extensions, and restorative hair care in Hartsdale, NY."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Alexa's Hair Artistry" />
     <meta
       property="og:image"
-      content="assets/vagaro/alexa-salon-studio-1.png"
+      content="https://www.alexahairartistry.com/assets/vagaro/alexa-salon-studio-1.png"
     />
-    <meta property="og:url" content="index.html" />
+    <meta
+      property="og:image:alt"
+      content="Interior view of Alexa's Hair Artistry studio in Hartsdale, New York."
+    />
+    <meta property="og:url" content="https://www.alexahairartistry.com/" />
     <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.alexahairartistry.com/" />
     <meta name="twitter:title" content="Alexa's Hair Artistry | Hartsdale NY" />
     <meta
       name="twitter:description"
@@ -44,10 +55,60 @@
     />
     <meta
       name="twitter:image"
-      content="assets/vagaro/alexa-salon-studio-1.png"
+      content="https://www.alexahairartistry.com/assets/vagaro/alexa-salon-studio-1.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Interior view of Alexa's Hair Artistry studio in Hartsdale, New York."
     />
 
     <link rel="preload" as="image" href="assets/vagaro/alexa-salon-studio-1.png" fetchpriority="high" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Alexa's Hair Artistry",
+        "url": "https://www.alexahairartistry.com/",
+        "image": "https://www.alexahairartistry.com/assets/vagaro/alexa-salon-studio-1.png",
+        "description": "Luxury hair color, blonding, smoothing treatments, extensions, and restorative hair care in Hartsdale, New York.",
+        "telephone": "+1-914-719-5642",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "110 South Central Avenue",
+          "addressLocality": "Hartsdale",
+          "addressRegion": "NY",
+          "postalCode": "10530",
+          "addressCountry": "US"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": "10:30",
+            "closes": "18:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "16:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "10:30",
+            "closes": "18:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "10:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -89,9 +150,7 @@
         
         <a
           class="btn-book magnetic-btn"
-          href="https://www.vagaro.com/alexashairartistry/book-now"
-          target="_blank"
-          rel="noreferrer"
+          href="#location-section"
         >
           <span class="btn-text">Book Now</span>
           <span class="btn-fill"></span>
@@ -111,7 +170,7 @@
         <a href="#services" class="mobile-link">Services</a>
         <a href="#gallery" class="mobile-link">Gallery</a>
         <a href="#location-section" class="mobile-link">Location</a>
-        <a href="https://www.vagaro.com/alexashairartistry/book-now" class="mobile-link mobile-cta" target="_blank">Book Now</a>
+        <a href="#location-section" class="mobile-link mobile-cta">Book Now</a>
       </div>
     </div>
 
@@ -146,7 +205,7 @@
           </p>
           
           <div class="hero-actions" data-reveal="up" data-delay="300">
-            <a href="https://www.vagaro.com/alexashairartistry/book-now" class="btn-primary magnetic-btn" target="_blank">
+            <a href="#services" class="btn-primary magnetic-btn">
               <span>Reserve Your Experience</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -590,7 +649,7 @@
           
           <div class="services-note" data-reveal="fade">
             <p>All color services include a complimentary consultation to ensure your vision is perfectly understood. 
-            <a href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank">Book your consultation today</a>.</p>
+            <a href="#location-section">Book your consultation today</a>.</p>
           </div>
         </div>
       </section>
@@ -661,9 +720,8 @@
               <span>(914) 719-5642</span>
             </a>
             <a 
-              href="https://www.vagaro.com/alexashairartistry/book-now" 
-              class="btn-primary magnetic-btn location-cta" 
-              target="_blank"
+              href="#top" 
+              class="btn-primary magnetic-btn location-cta"
             >
               <span>Book Appointment</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
