@@ -1373,10 +1373,6 @@ img {
   transition: opacity 0.5s ease;
 }
 
-img[loading] {
-  opacity: 0;
-}
-
 /* Text Balance for Headings */
 h1, h2, h3 {
   text-wrap: balance;
