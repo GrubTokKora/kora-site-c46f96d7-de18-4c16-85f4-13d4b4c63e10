@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hartsdale.salonsbyjc.com/sitemap.xml
+Sitemap: https://www.alexahairartistry.com/sitemap.xml
