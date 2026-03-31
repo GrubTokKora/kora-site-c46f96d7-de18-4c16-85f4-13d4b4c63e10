@@ -21,7 +21,7 @@
       rel="apple-touch-icon"
       href="https://51c46d9e86efbc2e8a3a-2cf820c5f887ee909ade2e14d7934417.ssl.cf2.rackcdn.com/Original/FIxsD_temp_170624634_325094_$2024_08_08_04_14_02_1372.png"
     />
-    <meta name="theme-color" content="#2a221a" />
+    <meta name="theme-color" content="#0a0a0a" />
 
     <meta property="og:title" content="Alexa's Hair Artistry | Hartsdale NY" />
     <meta
@@ -52,638 +52,627 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-  <base target="_blank">
-</head>
+  </head>
   <body id="top">
-    <div class="page-bg"></div>
-    <header class="site-header">
-      <a class="brand brand-logo" href="index.html">
-        <img
-          src="https://51c46d9e86efbc2e8a3a-2cf820c5f887ee909ade2e14d7934417.ssl.cf2.rackcdn.com/Original/FIxsD_temp_170624634_325094_$2024_08_08_04_14_02_1372.png"
-          alt="Alexa's Hair Artistry logo"
-        />
-      </a>
-      <button class="menu-toggle" aria-label="Toggle menu">Menu</button>
-      <nav class="nav">
-        <a href="#top" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#location-section">Location</a>
-      </nav>
-      <a
-        class="btn btn-primary header-cta"
-        href="https://www.vagaro.com/alexashairartistry/book-now"
-        target="_blank"
-        rel="noreferrer"
-        >Book Now</a
-      >
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
+    
+    <!-- Navigation -->
+    <header class="site-header" id="header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="Alexa's Hair Artistry Home">
+          <span class="brand-text">Alexa's Hair Artistry</span>
+        </a>
+        
+        <nav class="nav" id="nav">
+          <a href="#about" class="nav-link magnetic-link">
+            <span class="nav-text">About</span>
+            <span class="nav-hover">About</span>
+          </a>
+          <a href="#services" class="nav-link magnetic-link">
+            <span class="nav-text">Services</span>
+            <span class="nav-hover">Services</span>
+          </a>
+          <a href="#gallery" class="nav-link magnetic-link">
+            <span class="nav-text">Gallery</span>
+            <span class="nav-hover">Gallery</span>
+          </a>
+          <a href="#location-section" class="nav-link magnetic-link">
+            <span class="nav-text">Location</span>
+            <span class="nav-hover">Location</span>
+          </a>
+        </nav>
+        
+        <a
+          class="btn-book magnetic-btn"
+          href="https://www.vagaro.com/alexashairartistry/book-now"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span class="btn-text">Book Now</span>
+          <span class="btn-fill"></span>
+        </a>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
     </header>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-content">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#gallery" class="mobile-link">Gallery</a>
+        <a href="#location-section" class="mobile-link">Location</a>
+        <a href="https://www.vagaro.com/alexashairartistry/book-now" class="mobile-link mobile-cta" target="_blank">Book Now</a>
+      </div>
+    </div>
+
     <main>
-      <section class="vagaro-hero reveal" id="about">
-        <div class="vagaro-hero-media" aria-hidden="true">
+      <!-- Hero Section -->
+      <section class="hero-section" id="about">
+        <div class="hero-bg">
           <img
             src="assets/vagaro/alexa-salon-studio-1.png"
-            alt=""
-            loading="eager"
+            alt="Alexa's Hair Artistry Studio"
+            class="hero-image"
             fetchpriority="high"
-            decoding="async"
           />
+          <div class="hero-overlay"></div>
         </div>
-        <div class="vagaro-hero-copy">
-          <p class="hero-kicker">Hartsdale, New York</p>
-          <h1 class="hero-title">Alexa's Hair Artistry</h1>
-          <p class="vagaro-lead">
-            Welcome to Alexa's Hair Artistry, a salon studio in Hartsdale where luxury
-            meets intention. I specialize in color transformations, lived-in color,
-            dimensional blondes, non-toxic smoothing treatments and effortless styles -
-            all designed with your lifestyle and hair health in mind. Step into a salon
-            experience where every detail is chosen for confidence, beauty, and results
-            without compromise.
+        
+        <div class="hero-content">
+          <div class="hero-eyebrow" data-reveal="up">
+            <span class="line"></span>
+            <span>Hartsdale, New York</span>
+          </div>
+          
+          <h1 class="hero-title" data-reveal="up" data-delay="100">
+            <span class="title-line">Where Artistry</span>
+            <span class="title-line">Meets Intention</span>
+          </h1>
+          
+          <p class="hero-description" data-reveal="up" data-delay="200">
+            A luxury salon studio specializing in dimensional blondes, lived-in color, 
+            and non-toxic smoothing treatments. Every detail crafted for confidence, 
+            beauty, and uncompromising results.
           </p>
+          
+          <div class="hero-actions" data-reveal="up" data-delay="300">
+            <a href="https://www.vagaro.com/alexashairartistry/book-now" class="btn-primary magnetic-btn" target="_blank">
+              <span>Reserve Your Experience</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#services" class="btn-secondary magnetic-btn">
+              <span>Explore Services</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="scroll-indicator">
+          <div class="scroll-line"></div>
+          <span>Scroll</span>
         </div>
       </section>
 
-      <section class="vagaro-facility reveal" aria-labelledby="about-details-title">
-        <h2 id="about-details-title">Business Details</h2>
-        <div class="glass-card facility-grid">
-          <div class="facility-item">
-            <h3>Phone</h3>
-            <p><a href="tel:9147195642">(914) 719-5642</a></p>
-          </div>
-          <div class="facility-item">
-            <h3>Business Type</h3>
-            <p>Hair, Hair Extensions</p>
-          </div>
-          <div class="facility-item">
-            <h3>Walk-ins</h3>
-            <p>Yes</p>
-          </div>
-          <div class="facility-item facility-item-wide">
-            <h3>Payment Methods Accepted</h3>
-            <p>Visa and MasterCard, Discover, American Express, Debit card, Cash</p>
-          </div>
-          <div class="facility-item">
-            <h3>Amenities</h3>
-            <p>WiFi</p>
-          </div>
-          <div class="facility-item">
-            <h3>Parking</h3>
-            <p>Free parking</p>
-          </div>
-          <div class="facility-item">
-            <h3>Kid Friendly</h3>
-            <p>Yes</p>
-          </div>
-          <div class="facility-item">
-            <h3>Spoken Languages</h3>
-            <p>English, Spanish</p>
-          </div>
-          <div class="facility-item facility-item-wide">
-            <h3>Appointment Cancellation Policy</h3>
-            <p>
-              At Alexa's Hair Artistry, we strive to provide an exceptional standard of care.
-              In order to achieve this, we kindly request your cooperation in adhering to our
-              cancellation policy. We understand that unexpected circumstances may arise;
-              however, we kindly ask that you provide at least a 24 hour notice if you need
-              to cancel or reschedule your appt. Cancellations made with less than 24 hrs are
-              subject to a fee of 50% of the scheduled service. We appreciate your understanding
-              and cooperation in helping us maintain our schedule and serve all our clients
-              efficiently.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="hours-section reveal" aria-labelledby="business-hours-title">
-        <div class="glass-card hours-card">
-          <div class="hours-header">
-            <h2 id="business-hours-title" class="location-kicker">Business Hours</h2>
-          </div>
-          <div class="hours-list premium-hours-list" aria-label="Business hours">
-            <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
-            <div class="hours-row"><span>Monday</span><span>Closed</span></div>
-            <div class="hours-row"><span>Tuesday</span><span>Closed</span></div>
-            <div class="hours-row"><span>Wednesday</span><span>10:30 AM - 6:30 PM</span></div>
-            <div class="hours-row"><span>Thursday</span><span>4:00 PM - 8:00 PM</span></div>
-            <div class="hours-row"><span>Friday</span><span>10:30 AM - 6:30 PM</span></div>
-            <div class="hours-row"><span>Saturday</span><span>10:00 AM - 6:00 PM</span></div>
+      <!-- Introduction Section -->
+      <section class="intro-section">
+        <div class="container">
+          <div class="intro-grid">
+            <div class="intro-text" data-reveal="fade">
+              <span class="section-eyebrow">The Experience</span>
+              <h2 class="section-title">Crafted for the<br/>Discerning Client</h2>
+              <p class="intro-paragraph">
+                Step into a sanctuary where luxury hair artistry comes alive. From the moment 
+                you arrive, every element is designed to elevate your senses and transform 
+                your vision into reality.
+              </p>
+              <p class="intro-paragraph">
+                Specializing in color transformations, dimensional blondes, and restorative 
+                treatments, we merge technical excellence with an intuitive understanding of 
+                your unique beauty.
+              </p>
+            </div>
+            
+            <div class="intro-stats" data-reveal="fade" data-delay="200">
+              <div class="stat-item">
+                <span class="stat-number" data-count="10">0</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="500">0</span>
+                <span class="stat-suffix">+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="100">0</span>
+                <span class="stat-suffix">%</span>
+                <span class="stat-label">Premium Products</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="gallery reveal">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-          <article class="gallery-card">
-            <img
-              src="assets/vagaro/alexa-salon-studio-1.png"
-              alt="Alexa's Hair Artistry photo 1"
-              loading="lazy"
-            />
-          </article>
-          <article class="gallery-card">
-            <img
-              src="assets/vagaro/alexa-color-work-2.png"
-              alt="Alexa's Hair Artistry photo 2"
-              loading="lazy"
-            />
-          </article>
-          <article class="gallery-card">
-            <img
-              src="assets/vagaro/alexa-studio-detail-3.png"
-              alt="Alexa's Hair Artistry photo 3"
-              loading="lazy"
-            />
-          </article>
+      <!-- Services Preview -->
+      <section class="services-preview" id="services">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-eyebrow">Services</span>
+            <h2 class="section-title">Signature Offerings</h2>
+          </div>
+          
+          <div class="services-grid">
+            <article class="service-card" data-reveal="up" data-delay="0">
+              <div class="service-card-inner">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </div>
+                <h3>Dimensional Blonding</h3>
+                <p>From platinum transformations to lived-in sun-kissed glows, customized for your canvas.</p>
+                <span class="service-price">From $285</span>
+              </div>
+              <div class="service-card-glow"></div>
+            </article>
+            
+            <article class="service-card" data-reveal="up" data-delay="100">
+              <div class="service-card-inner">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                  </svg>
+                </div>
+                <h3>Color Harmony</h3>
+                <p>Root refresh, grey blending, and tone perfection with bond-building care.</p>
+                <span class="service-price">From $110</span>
+              </div>
+              <div class="service-card-glow"></div>
+            </article>
+            
+            <article class="service-card" data-reveal="up" data-delay="200">
+              <div class="service-card-inner">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 3v18M3 12h18M7 7l10 10M7 17L17 7"/>
+                  </svg>
+                </div>
+                <h3>Smoothing Rituals</h3>
+                <p>Non-toxic keratin and PuraLuxe treatments for frizz-free, healthy hair.</p>
+                <span class="service-price">From $350</span>
+              </div>
+              <div class="service-card-glow"></div>
+            </article>
+            
+            <article class="service-card" data-reveal="up" data-delay="300">
+              <div class="service-card-inner">
+                <div class="service-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <h3>Extensions</h3>
+                <p>Length and volume enhancement with seamless, natural-looking application.</p>
+                <span class="service-price">Consultation</span>
+              </div>
+              <div class="service-card-glow"></div>
+            </article>
+          </div>
+          
+          <div class="services-cta" data-reveal="up">
+            <a href="#full-services" class="btn-outline magnetic-btn">
+              <span>View Complete Menu</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section class="card-grid reveal single-card-section">
-        <article class="glass-card">
-          <h2>Signature Services</h2>
-          <h3>Blonding, color, smoothing, and cuts</h3>
-          <p>
-            Popular services include signature haircuts, luxe blowouts, custom
-            highlights, specialty color sessions, gloss treatments, and non-toxic
-            keratin and smoothing services.
-          </p>
-          <p>
-            Explore the full menu below for categories, descriptions, and starting
-            prices pulled from the public business listing.
-          </p>
-        </article>
+      <!-- Gallery Section -->
+      <section class="gallery-section" id="gallery">
+        <div class="container">
+          <div class="section-header center" data-reveal="up">
+            <span class="section-eyebrow">Portfolio</span>
+            <h2 class="section-title">The Art of Transformation</h2>
+          </div>
+          
+          <div class="gallery-showcase">
+            <div class="gallery-item large" data-reveal="scale" data-delay="0">
+              <div class="gallery-image-wrapper">
+                <img src="assets/vagaro/alexa-salon-studio-1.png" alt="Salon Studio" loading="lazy"/>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">The Studio</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-reveal="scale" data-delay="100">
+              <div class="gallery-image-wrapper">
+                <img src="assets/vagaro/alexa-color-work-2.png" alt="Color Work" loading="lazy"/>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">Color Work</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="gallery-item" data-reveal="scale" data-delay="200">
+              <div class="gallery-image-wrapper">
+                <img src="assets/vagaro/alexa-studio-detail-3.png" alt="Studio Detail" loading="lazy"/>
+                <div class="gallery-overlay">
+                  <span class="gallery-tag">Details</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="alexa-services-catalog reveal" id="services">
-        <h2>Services</h2>
-        <p class="muted">
-          Menus, starting prices, earned points, and descriptions are taken from the
-          business's public service listings. Call to request an appointment.
-        </p>
-
-        <details class="service-category" open>
-          <summary>
-            <span class="acc-title">Haircuts and Other</span>
-            <span class="acc-toggle" aria-hidden="true"></span>
-          </summary>
-          <div class="service-cards-grid">
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Signature Haircut Experience</h3>
-                <span class="service-price">Starting at $95.00</span>
-              </div>
-              <p class="service-points">Earned points: 60</p>
-              <p class="service-desc">
-                A personalized haircut tailored to your face shape, texture and lifestyle.
-                Includes a luxurious shampoo, relaxing conditioning ritual, precision cut,
-                and a signature blowout for a polished finish.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Men's Haircut</h3>
-                <span class="service-price">Starting at $45.00</span>
-              </div>
-              <p class="service-points">Earned points: 40</p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Youth Haircut 12 and Under</h3>
-                <span class="service-price">Starting at $55.00</span>
-              </div>
-              <p class="service-points">Earned points: 45</p>
-              <p class="service-desc">
-                A clean, age appropriate cut for younger guests. Includes a light blow-dry
-                or styling finish.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Boys Haircut under 10</h3>
-                <span class="service-price">Starting at $35.00</span>
-              </div>
-              <p class="service-points">Earned points: 35</p>
-              <p class="service-desc">Hair cuts for boys under 10 years old.</p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Youth Haircut 16 and Under</h3>
-                <span class="service-price">Starting at $70.00</span>
-              </div>
-              <p class="service-points">Earned points: 55</p>
-              <p class="service-desc">
-                A clean, age appropriate cut for younger guests. Includes a light blow-dry
-                or styling finish.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Consultation</h3>
-                <span class="service-price">$0.00</span>
-              </div>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
+      <!-- Full Services Section -->
+      <section class="full-services" id="full-services">
+        <div class="container">
+          <div class="section-header" data-reveal="up">
+            <span class="section-eyebrow">The Menu</span>
+            <h2 class="section-title">Complete Services</h2>
           </div>
-        </details>
+          
+          <div class="services-accordion">
+            <!-- Haircuts -->
+            <div class="accordion-item" data-reveal="up">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-number">01</span>
+                <span class="accordion-title">Haircuts & Styling</span>
+                <span class="accordion-icon">
+                  <span class="accordion-line horizontal"></span>
+                  <span class="accordion-line vertical"></span>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <div class="service-list">
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Signature Haircut Experience</h4>
+                      <p>Personalized cut with luxurious shampoo, conditioning ritual, and signature blowout</p>
+                    </div>
+                    <span class="service-amount">$95+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Men's Haircut</h4>
+                      <p>Precision cut tailored to your style</p>
+                    </div>
+                    <span class="service-amount">$45+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Youth Haircut 12 & Under</h4>
+                      <p>Age-appropriate cut with light styling</p>
+                    </div>
+                    <span class="service-amount">$55+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Boys Under 10</h4>
+                    </div>
+                    <span class="service-amount">$35+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Youth 16 & Under</h4>
+                      <p>Clean cut with blow-dry finish</p>
+                    </div>
+                    <span class="service-amount">$70+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>The Luxe Blowout</h4>
+                      <p>Voluminous blow-dry with nourishing ritual</p>
+                    </div>
+                    <span class="service-amount">$55+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Event Ready Styling</h4>
+                      <p>Red carpet styling, updos, and special occasion looks</p>
+                    </div>
+                    <span class="service-amount">$105+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <details class="service-category">
-          <summary>
-            <span class="acc-title">Styles</span>
-            <span class="acc-toggle" aria-hidden="true"></span>
-          </summary>
-          <div class="service-cards-grid">
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Braid</h3>
-                <span class="service-price">Starting at $35.00</span>
+            <!-- Color -->
+            <div class="accordion-item" data-reveal="up">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-number">02</span>
+                <span class="accordion-title">Hair Color</span>
+                <span class="accordion-icon">
+                  <span class="accordion-line horizontal"></span>
+                  <span class="accordion-line vertical"></span>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <div class="service-list">
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Root Refresh</h4>
+                      <p>Ammonia & PPD-free root color with bond-building treatment</p>
+                    </div>
+                    <span class="service-amount">$110+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Modern Grey Whisper</h4>
+                      <p>Sheer tint to soften grey with dimension</p>
+                    </div>
+                    <span class="service-amount">$95+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Color Harmony Treatment</h4>
+                      <p>All-over tone refresh with gloss and conditioning</p>
+                    </div>
+                    <span class="service-amount">$155+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Signature Gloss</h4>
+                      <p>Color-refreshing treatment for shine and softness</p>
+                    </div>
+                    <span class="service-amount">$65+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Corrective Color</h4>
+                      <p>Custom strategy session — pricing varies</p>
+                    </div>
+                    <span class="service-amount">Consult</span>
+                  </div>
+                </div>
               </div>
-              <p class="service-points">Earned points: 35</p>
-              <p class="service-desc">Style your hair with a French or Dutch braid.</p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>The Luxe Blowout</h3>
-                <span class="service-price">Starting at $55.00</span>
-              </div>
-              <p class="service-points">Earned points: 45</p>
-              <p class="service-desc">
-                A smooth, voluminous blow-dry with lasting body and shine. Includes a
-                nourishing and relaxing shampoo and conditioning ritual.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Sculpt and Style</h3>
-                <span class="service-price">Starting at $85.00</span>
-              </div>
-              <p class="service-points">Earned points: 60</p>
-              <p class="service-desc">
-                Add soft waves, curls or sleek finishes using hot tools after blowout.
-                Designed to elevate your look.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Event Ready Styling</h3>
-                <span class="service-price">Starting at $105.00</span>
-              </div>
-              <p class="service-points">Earned points: 95</p>
-              <p class="service-desc">
-                Red carpet or special occasion styling-from glam curls to polished updos.
-                Ideal for photoshoots, parties and important events.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-          </div>
-        </details>
+            </div>
 
-        <details class="service-category">
-          <summary>
-            <span class="acc-title">Hair Color</span>
-            <span class="acc-toggle" aria-hidden="true"></span>
-          </summary>
-          <div class="service-cards-grid">
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Root Refresh</h3>
-                <span class="service-price">Starting at $110.00</span>
+            <!-- Highlights -->
+            <div class="accordion-item" data-reveal="up">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-number">03</span>
+                <span class="accordion-title">Custom Highlights</span>
+                <span class="accordion-icon">
+                  <span class="accordion-line horizontal"></span>
+                  <span class="accordion-line vertical"></span>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <div class="service-list">
+                  <div class="service-row featured">
+                    <div class="service-info">
+                      <h4>The Luxe Blonding</h4>
+                      <p>Full transformation for maximum lift and brightness. Includes bond care and glossing.</p>
+                      <span class="featured-tag">Signature</span>
+                    </div>
+                    <span class="service-amount">$315+</span>
+                  </div>
+                  <div class="service-row featured">
+                    <div class="service-info">
+                      <h4>The Lived-In Blonding Experience</h4>
+                      <p>Effortless, low-maintenance blonding with graceful grow-out</p>
+                      <span class="featured-tag">Popular</span>
+                    </div>
+                    <span class="service-amount">$285+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>PureGlow Partial</h4>
+                      <p>Crown and face-framing highlights</p>
+                    </div>
+                    <span class="service-amount">$130+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Half and Radiant</h4>
+                      <p>Half head of customized highlights</p>
+                    </div>
+                    <span class="service-amount">$205+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Ombre Oasis</h4>
+                      <p>Beautiful color contrasts from dark roots to light ends</p>
+                    </div>
+                    <span class="service-amount">$315+</span>
+                  </div>
+                </div>
               </div>
-              <p class="service-points">Earned points: 105</p>
-              <p class="service-desc">
-                A gentle, ammonia and PPD free root color application that includes a
-                nourishing bond building treatment for hair health and vibrancy. Safe,
-                scalp-friendly formula.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Modern Grey Whisper</h3>
-                <span class="service-price">Starting at $95.00</span>
-              </div>
-              <p class="service-points">Earned points: 85</p>
-              <p class="service-desc">
-                A sheer tint to soften the appearance of grey while adding tone and
-                dimension without full coverage. Ideal for those embracing their natural
-                grey with a polished finish.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Corrective Color Session</h3>
-                <span class="service-price">Pricing varies</span>
-              </div>
-              <p class="service-desc">
-                Custom strategy session to bring your hair back to balance, beauty, and
-                vibrancy. Pricing and timing vary based on hair history and goals.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Color Harmony Treatment (All-Over Tone Refresh)</h3>
-                <span class="service-price">Starting at $155.00</span>
-              </div>
-              <p class="service-points">Earned points: 155</p>
-              <p class="service-desc">
-                Even out faded or brassy tones and restore shine across your full canvas.
-                Includes a gloss and conditioning treatment. Recommended between major color
-                sessions.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Double Process</h3>
-                <span class="service-price">-</span>
-              </div>
-              <p class="service-desc">
-                Double Process is a transformative service that involves bleaching your hair
-                to lift your natural color and applying a new hue in a two-step process.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Signature Gloss Treatment</h3>
-                <span class="service-price">Starting at $65.00</span>
-              </div>
-              <p class="service-points">Earned points: 50</p>
-              <p class="service-desc">
-                A nourishing color-refreshing treatment to enhance tone, add shine, and
-                seal in softness. Perfect between blonding services or to refresh faded
-                color.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-          </div>
-        </details>
+            </div>
 
-        <details class="service-category">
-          <summary>
-            <span class="acc-title">Custom Highlight</span>
-            <span class="acc-toggle" aria-hidden="true"></span>
-          </summary>
-          <div class="service-cards-grid">
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>PureGlow Partial</h3>
-                <span class="service-price">Starting at $130.00</span>
+            <!-- Treatments -->
+            <div class="accordion-item" data-reveal="up">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-number">04</span>
+                <span class="accordion-title">Treatments</span>
+                <span class="accordion-icon">
+                  <span class="accordion-line horizontal"></span>
+                  <span class="accordion-line vertical"></span>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <div class="service-list">
+                  <div class="service-row featured">
+                    <div class="service-info">
+                      <h4>Non-Toxic Keratin Treatment</h4>
+                      <p>Formaldehyde-free smoothing treatment lasting up to 4 months</p>
+                      <span class="featured-tag">Premium</span>
+                    </div>
+                    <span class="service-amount">$350+</span>
+                  </div>
+                  <div class="service-row featured">
+                    <div class="service-info">
+                      <h4>PuraLuxe Smoothing Treatment</h4>
+                      <p>Amino acid-powered, clean alternative with no downtime</p>
+                      <span class="featured-tag">Premium</span>
+                    </div>
+                    <span class="service-amount">$375+</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>K18 Repair Treatment</h4>
+                      <p>Reconstructs damaged keratin chains</p>
+                    </div>
+                    <span class="service-amount">$45</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Bond Building Treatment</h4>
+                      <p>Protects against color fading, boosts shine</p>
+                    </div>
+                    <span class="service-amount">$55</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>The Scalp Reset Ritual</h4>
+                      <p>Detoxifying scalp treatment with exfoliation and hydration</p>
+                    </div>
+                    <span class="service-amount">$105+</span>
+                  </div>
+                </div>
               </div>
-              <p class="service-points">Earned points: 125</p>
-              <p class="service-desc">
-                Strategic lightening through the crown and face framing areas for a bright,
-                dimensional refresh without the full commitment.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Half and Radiant</h3>
-                <span class="service-price">Starting at $205.00</span>
-              </div>
-              <p class="service-points">Earned points: 205</p>
-              <p class="service-desc">
-                A half head of customized highlights for seamless brightness and lived-in
-                dimension. Includes bond care and glossing.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>The Luxe Blonding</h3>
-                <span class="service-price">Starting at $315.00</span>
-              </div>
-              <p class="service-points">Earned points: 265</p>
-              <p class="service-desc">
-                A full transformation designed for maximum lift and brightness. Perfect for
-                platinum, bold blondes-includes bond care and glossing.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>The lived-in Blonding Experience</h3>
-                <span class="service-price">Starting at $285.00</span>
-              </div>
-              <p class="service-points">Earned points: 285</p>
-              <p class="service-desc">
-                Effortless, low maintenance blonding for a soft, sunlit glow and graceful
-                grow-out-includes bond care and glossing.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>The Root Brightener</h3>
-                <span class="service-price">Starting at $135.00</span>
-              </div>
-              <p class="service-points">Earned points: 130</p>
-              <p class="service-desc">
-                Blonde maintenance for existing all-over blondes-includes toner and bond
-                protection.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Ombre Oasis</h3>
-                <span class="service-price">Starting at $315.00</span>
-              </div>
-              <p class="service-points">Earned points: 285</p>
-              <p class="service-desc">
-                A stunning highlight technique that creates beautiful color contrasts,
-                transitioning smoothly from dark roots to light ends. Experience the perfect
-                blend of shades for a captivating and effortless look.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-          </div>
-        </details>
+            </div>
 
-        <details class="service-category">
-          <summary>
-            <span class="acc-title">Specialty Color Session</span>
-            <span class="acc-toggle" aria-hidden="true"></span>
-          </summary>
-          <div class="service-cards-grid">
-            <article class="service-offer-card service-offer-card-wide">
-              <div class="service-offer-head">
-                <h3>Specialty Color Session</h3>
-                <span class="service-price">Starting at $215.00</span>
+            <!-- Extensions -->
+            <div class="accordion-item" data-reveal="up">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span class="accordion-number">05</span>
+                <span class="accordion-title">Extensions</span>
+                <span class="accordion-icon">
+                  <span class="accordion-line horizontal"></span>
+                  <span class="accordion-line vertical"></span>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <div class="service-list">
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Extensions Consultation</h4>
+                      <p>Complimentary consultation to determine method and hair requirements</p>
+                    </div>
+                    <span class="service-amount">Free</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Extensions Implementation</h4>
+                      <p>Application for length/volume (per box, hair not included)</p>
+                    </div>
+                    <span class="service-amount">Contact</span>
+                  </div>
+                  <div class="service-row">
+                    <div class="service-info">
+                      <h4>Extensions Touch-up</h4>
+                      <p>Reapplication and maintenance (per box)</p>
+                    </div>
+                    <span class="service-amount">Contact</span>
+                  </div>
+                </div>
               </div>
-              <p class="service-points">Earned points: 295</p>
-              <p class="service-desc">
-                A fully customized coloring experience designed for transformation, grey
-                blending and/or hand painted highlights. Strategically lightening, tone
-                blending or tone-popping for a vibrant color. Whether bold or subtle, this
-                service adds edge and personality.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
+            </div>
           </div>
-        </details>
-
-        <details class="service-category">
-          <summary>
-            <span class="acc-title">Extensions</span>
-            <span class="acc-toggle" aria-hidden="true"></span>
-          </summary>
-          <div class="service-cards-grid">
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Extensions - Consultation</h3>
-                <span class="service-price">$0.00</span>
-              </div>
-              <p class="service-points">Earned points: 1</p>
-              <p class="service-desc">
-                Extensions are expertly applied near the scalp to enhance both length and
-                volume, seamlessly blending with your natural hair for a flawless finish.
-                During the consultation, we will determine the most suitable method and the
-                amount of hair required to create your desired look.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Extensions - Implementation</h3>
-                <span class="service-price">Contact for pricing</span>
-              </div>
-              <p class="service-desc">
-                Application to add length or volume with real human hair, includes shampooing
-                and blow-dry. (per box) Extension not included.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Extensions - Touch-up</h3>
-                <span class="service-price">Contact for pricing</span>
-              </div>
-              <p class="service-desc">
-                Reapplication of extension, part of maintenance. Includes shampooing and
-                style (per box).
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Extensions - Removal</h3>
-                <span class="service-price">Contact for pricing</span>
-              </div>
-              <p class="service-desc">Removal of extension. Part of the maintenance.</p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
+          
+          <div class="services-note" data-reveal="fade">
+            <p>All color services include a complimentary consultation to ensure your vision is perfectly understood. 
+            <a href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank">Book your consultation today</a>.</p>
           </div>
-        </details>
-
-        <details class="service-category">
-          <summary>
-            <span class="acc-title">Treatments</span>
-            <span class="acc-toggle" aria-hidden="true"></span>
-          </summary>
-          <div class="service-cards-grid">
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Non-Toxic Keratin Treatment</h3>
-                <span class="service-price">Starting at $350.00</span>
-              </div>
-              <p class="service-points">Earned points: 350</p>
-              <p class="service-desc">
-                Non-Toxic Smoothing Keratin Treatment-safe and effective without harmful
-                chemicals like formaldehyde. Enjoy smooth, frizz-free, healthier-looking
-                hair. Lasts up to 4 months. Price varies depending on hair length and
-                thickness.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>PuraLuxe Smoothing Treatment</h3>
-                <span class="service-price">Starting at $375.00</span>
-              </div>
-              <p class="service-points">Earned points: 355</p>
-              <p class="service-desc">
-                A clean, non-toxic alternative to traditional keratin treatments-formaldehyde-free
-                and powered by amino acids, proteins and essential oils. Smooths, defrizzes
-                and strengthens while maintaining natural health and texture. Safe for all hair
-                types. No downtime. No harsh fumes.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Bond Building, Restorative Treatment</h3>
-                <span class="service-price">$55.00</span>
-              </div>
-              <p class="service-points">Earned points: 55</p>
-              <p class="service-desc">
-                Nourish and restore your hair with this bond-building treatment-designed to
-                protect against color fading and boost shine, vibrancy, and radiance. Works
-                from within to strengthen your hair for enhanced color protection and
-                resilience.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>K18 Repair Treatment</h3>
-                <span class="service-price">$45.00</span>
-              </div>
-              <p class="service-points">Earned points: 45</p>
-              <p class="service-desc">
-                K18 Repair Treatment reconstructs damaged keratin chains and enhances their
-                resilience, restoring overall strength and vitality to the hair.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>Hair and Scalp Treatment</h3>
-                <span class="service-price">$90.00</span>
-              </div>
-              <p class="service-points">Earned points: 110</p>
-              <p class="service-desc">
-                Restore and nourish your hair and scalp-ultimate revitalizing and maintenance
-                for healthy hair.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-            <article class="service-offer-card">
-              <div class="service-offer-head">
-                <h3>The Scalp Reset Ritual</h3>
-                <span class="service-price">Starting at $105.00</span>
-              </div>
-              <p class="service-points">Earned points: 55</p>
-              <p class="service-desc">
-                A luxurious detoxifying scalp treatment designed to remove buildup, rebalance
-                oil production and promote a healthy environment for hair growth. Includes an
-                exfoliating scalp cleanse, targeted hydration and a tension-releasing ritual.
-              </p>
-              <a class="btn-request" href="https://www.vagaro.com/alexashairartistry/book-now" target="_blank" rel="noreferrer">Request</a>
-            </article>
-          </div>
-        </details>
+        </div>
       </section>
 
-      <section class="location-map-section reveal" id="location-section">
-        <h2>Location</h2>
-        <div class="location-split">
-          <div class="glass-card location-map-card">
+      <!-- Info Section -->
+      <section class="info-section">
+        <div class="container">
+          <div class="info-grid">
+            <div class="info-block" data-reveal="up">
+              <span class="info-label">Hours</span>
+              <div class="hours-list">
+                <div class="hours-row">
+                  <span>Wed</span>
+                  <span>10:30 AM - 6:30 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span>Thu</span>
+                  <span>4:00 PM - 8:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span>Fri</span>
+                  <span>10:30 AM - 6:30 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span>Sat</span>
+                  <span>10:00 AM - 6:00 PM</span>
+                </div>
+                <div class="hours-row closed">
+                  <span>Sun - Tue</span>
+                  <span>Closed</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="info-block" data-reveal="up" data-delay="100">
+              <span class="info-label">Details</span>
+              <ul class="info-list">
+                <li><strong>Walk-ins:</strong> Welcome</li>
+                <li><strong>Parking:</strong> Free on-site</li>
+                <li><strong>Payment:</strong> All major cards, cash</li>
+                <li><strong>Languages:</strong> English, Spanish</li>
+                <li><strong>Amenities:</strong> WiFi, Kid-friendly</li>
+              </ul>
+            </div>
+            
+            <div class="info-block policy" data-reveal="up" data-delay="200">
+              <span class="info-label">Policy</span>
+              <p class="policy-text">
+                We kindly request 24-hour notice for cancellations. Cancellations made with less than 
+                24 hours notice are subject to a 50% fee of the scheduled service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Section -->
+      <section class="location-section" id="location-section">
+        <div class="location-content">
+          <div class="location-text" data-reveal="up">
+            <span class="section-eyebrow">Visit Us</span>
+            <h2 class="section-title">Hartsdale Studio</h2>
+            <div class="location-address">
+              <p>110 South Central Avenue</p>
+              <p>Hartsdale, NY 10530</p>
+            </div>
+            <a href="tel:9147195642" class="location-phone magnetic-btn">
+              <span>(914) 719-5642</span>
+            </a>
+            <a 
+              href="https://www.vagaro.com/alexashairartistry/book-now" 
+              class="btn-primary magnetic-btn location-cta" 
+              target="_blank"
+            >
+              <span>Book Appointment</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+          
+          <div class="location-map" data-reveal="fade">
             <iframe
               title="Google map for Alexa's Hair Artistry"
               src="https://www.google.com/maps?q=110+South+Central+Avenue,+Hartsdale,+NY+10530&output=embed"
@@ -691,53 +680,50 @@
               referrerpolicy="no-referrer-when-downgrade"
               allowfullscreen
             ></iframe>
+            <div class="map-overlay"></div>
           </div>
-          <article class="glass-card location-details-card">
-            <p class="location-kicker">Visit the Studio</p>
-            <h3>Alexa's Hair Artistry</h3>
-            <div class="location-address-block">
-              <p>110 South Central Avenue</p>
-              <p>Hartsdale, NY 10530</p>
-              <p>United States</p>
-            </div>
-            <div class="location-detail-row">
-              <span class="location-detail-label">Phone</span>
-              <a href="tel:9147195642">(914) 719-5642</a>
-            </div>
-            <div class="location-detail-row">
-              <span class="location-detail-label">Parking</span>
-              <span>Free parking available</span>
-            </div>
-          </article>
         </div>
       </section>
-
     </main>
 
-    <footer class="site-footer"></footer>
-    <script>
-      (function () {
-        const days = [
-          "Sunday",
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ];
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="footer-logo">Alexa's Hair Artistry</span>
+            <p>Luxury hair color and smoothing treatments in Hartsdale, NY</p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="#about" class="footer-link magnetic-link">About</a>
+            <a href="#services" class="footer-link magnetic-link">Services</a>
+            <a href="#gallery" class="footer-link magnetic-link">Gallery</a>
+            <a href="#location-section" class="footer-link magnetic-link">Location</a>
+          </div>
+          
+          <div class="footer-social">
+            <a href="#" class="social-link magnetic-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link magnetic-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 Alexa's Hair Artistry. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
 
-        const todayName = days[new Date().getDay()];
-        const rows = Array.from(document.querySelectorAll(".premium-hours-list .hours-row"));
-        const match = rows.find((row) => {
-          const dayText = row.querySelector("span:first-child")?.textContent?.trim();
-          return dayText === todayName;
-        });
-
-        if (!match) return;
-
-        match.classList.add("is-today");
-      })();
-    </script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>
