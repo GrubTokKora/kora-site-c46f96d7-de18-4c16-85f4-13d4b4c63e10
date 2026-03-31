@@ -100,36 +100,17 @@ body {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: var(--color-text);
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  position: relative;
-  overflow: hidden;
 }
 
-.brand-text {
+.brand-logo {
   display: block;
-  transition: transform var(--transition-base) var(--ease-out-expo);
-}
-
-.brand:hover .brand-text {
-  transform: translateY(-100%);
-}
-
-.brand::after {
-  content: "Alexa's Hair Artistry";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  color: var(--color-accent);
-  transition: transform var(--transition-base) var(--ease-out-expo);
-}
-
-.brand:hover::after {
-  transform: translateY(-100%);
+  width: auto;
+  height: 60px;
+  object-fit: contain;
 }
 
 /* Navigation */
@@ -1092,6 +1073,14 @@ body {
 
 .footer-brand {
   max-width: 300px;
+}
+
+.footer-brand-mark {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 .footer-logo {
